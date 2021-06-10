@@ -1,0 +1,33 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+button {
+    display: block;
+    background-color: white;
+    border-color: red;
+    border-width: 2px;
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 20%;
+    height: 100px;
+    width: 240px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:active {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
